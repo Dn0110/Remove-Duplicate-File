@@ -1,10 +1,10 @@
-"""Remove Arquivos Duplicados"""
+"""Remove Duplicates Files"""
 
 import os
 import hashlib
 
 
-path = 'C:\\Users\\anymo\\Desktop\\RECOVER\\Dados_Recupearados\\png\\'
+path = 'C:\\'
 extension = '.jpg', '.JPG', '.png', '.PNG'
 details = {}
 name_copy = []
@@ -33,7 +33,6 @@ def get_info_files(path):
 
 
 def action_1():
-    # LÓGICA FUNCIONANDO CORRETAMENTE, FALTA TRATAR ERROS.
     global verification
     verification -= 1
     try:
@@ -75,13 +74,10 @@ def action_2():
 
 
 def action_3():
-    # DESENVOLVENDO... Hash Check
+    #  Hash Check
     global verification
     verification -= 1
     print("[!]:Identifying HASH of files...\n")
-    # print('---' * 10, 'HASH', '---' * 10)
-    # print(hash_rm_duplicate)
-    # print('---' * 22)
     total_f = []
     total_f_dup = []
     try:
